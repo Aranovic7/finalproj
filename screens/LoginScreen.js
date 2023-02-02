@@ -24,13 +24,13 @@ const LoginScreen = () => {
            
             
             <Text style={{marginLeft: 34, marginTop: 45}}>Email</Text>
-            <TextInput style={styles.textInputStyle}></TextInput> {/* This textinput is for the user to input her Email */}
+            <TextInput style={styles.textInputStyle}></TextInput> 
             <Text style={{marginLeft: 34, marginTop: 30}}>Password</Text>
             <TextInput style={styles.textInputStyle} 
-            secureTextEntry> {/* Same textinput but for the password, this one will not display the password */}
+            secureTextEntry>
             </TextInput>
             <TouchableOpacity style={styles.SignUpBottom}
-            onPress={() => navigation.navigate(Category)}> {/* After successful log in, navigate to -> Category.js file */}
+            onPress={() => navigation.navigate(Category)}> 
                 <Text style={{textAlign: 'center', color: 'white'}}>Sign up</Text>
             </TouchableOpacity>
             </View>

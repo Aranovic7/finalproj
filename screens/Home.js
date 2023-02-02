@@ -1,7 +1,4 @@
-/* 
-* This file is my homepage which is the first thing the user will experience
-* from here you can press start and then have the options to log in or register to continue
-*/
+
 import { View, Text, StyleSheet, TouchableOpacity, Modal, TouchableHighlight, Alert, Image} from "react-native"
 import { useNavigation } from "@react-navigation/native";
 import {  useState } from "react";
@@ -9,10 +6,10 @@ import LoginScreen from "./LoginScreen";
 
 
 const Home = () => {
-    const [showModal, setShowModal] = useState(false) // modal default value = false
-    const navigation = useNavigation(); // <- so that I can use navigation
+    const [showModal, setShowModal] = useState(false) 
+    const navigation = useNavigation(); 
     const alertMessage = () =>
-    Alert.alert('Alert', 'This is a alert message', [ // My alert message
+    Alert.alert('Alert', 'This is a alert message', [ 
       {
         text: 'Cancel',
         
@@ -23,7 +20,7 @@ const Home = () => {
     return(
         <View style={styles.container}>
             <View>
-            <Modal  //Here I create my modal
+            <Modal  
              animationType="slide"
              transparent={true}
              visible={showModal}
@@ -41,11 +38,11 @@ const Home = () => {
               <Text style={{textAlign: 'center', marginBottom: 80}}>Already have an account?</Text>
               <Text style={{textAlign: 'center', marginBottom: 230}}>New to QuizNow? Sign up</Text>
               <TouchableHighlight style={styles.logInButton} onPress={() => {navigation.navigate(LoginScreen); setShowModal(!showModal)}}>
-                <Text style={styles.logInButtonText}>LOG IN</Text> {/* On press "LOG IN" navigate -> LoginScreen */}
+                <Text style={styles.logInButtonText}>LOG IN</Text> 
                   </TouchableHighlight> 
                 <TouchableOpacity style={styles.registerButton}
                 onPress={alertMessage}>
-                  <Text style={styles.registerButtonText}>REGISTER</Text> {/* On press "REGISTER" -> alert.message */}
+                  <Text style={styles.registerButtonText}>REGISTER</Text> 
                 </TouchableOpacity>
 
                 </View>

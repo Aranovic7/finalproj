@@ -1,5 +1,3 @@
-// App.js file - this file contains only the code needed to make the stack navigator
-
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, View } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';

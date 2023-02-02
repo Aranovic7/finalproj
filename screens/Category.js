@@ -26,7 +26,7 @@ const Category = () => {
                 <ScrollView>
                 <View style={styles.cateMargin}>
                  <TouchableOpacity style={[styles.eachCategory,{backgroundColor: backgroundColor}]} 
-                    onPress={() => {setBackgroundColor('#2aff00'); navigation.navigate(QuizQuestions)}}> {/* Change backgroundcolor on press, also navigate -> QuizQuestions.js file */}
+                    onPress={() => {setBackgroundColor('#2aff00'); navigation.navigate(QuizQuestions)}}> 
                     <Text style={styles.categoryHeader}>Sports</Text>
                  </TouchableOpacity>
                 </View>
@@ -58,7 +58,7 @@ const Category = () => {
                 </ScrollView>
 
                 <TouchableOpacity style={{alignItems:'center', marginBottom: -35}}
-                    onPress={() => navigation.navigate(Home)}> {/* Home button to navigate -> Home.js */}
+                    onPress={() => navigation.navigate(Home)}> 
                     <Image style={{height: 30, width: 30}} source={require("../icons/homeiconwhite.png")}/>
                 </TouchableOpacity>
 

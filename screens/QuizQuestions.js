@@ -11,7 +11,7 @@ const QuizQuestions  = ({ answers }) => {
     const questions = [
           
 { 
-    question: "", //This question is empty to make it look like index 0 is actually the first question
+    question: "", 
     answers: [""],
     correctAnswer: ""
 },        
@@ -78,7 +78,7 @@ const QuizQuestions  = ({ answers }) => {
                 <Text style={styles.askingUser}>Wanna try again?</Text>
             <TouchableOpacity 
                  onPress={() => navigation.navigate(Category)}>
-                 <Text style={styles.pressMe}>Press me</Text> {/* Navigate back to Category.js file if user wants to play again */}   
+                 <Text style={styles.pressMe}>Press me</Text>   
             </TouchableOpacity>
             </View>
         )  
